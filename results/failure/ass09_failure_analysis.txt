@@ -1,0 +1,98 @@
+=================================================================
+IKT FAILURE CASE ANALYSIS - ASSISTments 2009
+Date: 2026-02-18 14:40:50
+Runtime: 2.0s
+Train ARFF: /Users/fadi/Library/CloudStorage/GoogleDrive-fadi.azayem@gmail.com/My Drive/Master of AI/AI501_JAN26 - Artifical Intelligence/Assignment 2/IKT_modernized/./train_data.arff
+Test ARFF: /Users/fadi/Library/CloudStorage/GoogleDrive-fadi.azayem@gmail.com/My Drive/Master of AI/AI501_JAN26 - Artifical Intelligence/Assignment 2/IKT_modernized/./test_data.arff
+=================================================================
+
+Total test instances:    47228
+Correct predictions:     35529 (75.23%)
+Wrong predictions:       11699 (24.77%)
+
+=================================================================
+HIGH-CONFIDENCE ERRORS (predicted with >80% confidence, but WRONG)
+=================================================================
+Count: 2413 (5.11% of all test)
+
+  Confidence distribution of high-confidence errors:
+    >= 80% confidence: 2413
+    >= 85% confidence: 1492
+    >= 90% confidence: 696
+    >= 95% confidence: 182
+
+  False Positives (predicted correct, actually wrong): 1827
+  False Negatives (predicted wrong, actually correct): 586
+
+  Top 10 highest-confidence errors:
+  Inst#    Actual   Predicted  Confidence  
+  --------------------------------------
+  14644    0        1          0.9980
+  21559    0        1          0.9980
+  36240    0        1          0.9980
+  30091    0        1          0.9970
+  36455    1        0          0.9970
+  8055     0        1          0.9960
+  29568    1        0          0.9960
+  36457    1        0          0.9960
+  36479    1        0          0.9960
+  15790    0        1          0.9950
+
+=================================================================
+LOW-CONFIDENCE CORRECT (correct but <60% confidence = 'lucky')
+=================================================================
+Count: 4354 (9.22% of all test)
+
+=================================================================
+CONFUSION MATRIX
+=================================================================
+                    Predicted=1(correct)  Predicted=0(wrong)
+  Actual=1(correct)    TP=27025              FN=4034    
+  Actual=0(wrong)      FP=7665               TN=8504    
+
+  Precision: 0.7790
+  Recall:    0.8701
+  F1-Score:  0.8221
+
+=================================================================
+CONFIDENCE DISTRIBUTION
+=================================================================
+  Bin             Total    Correct    Wrong    Accuracy  
+  ---------------------------------------------------
+  0.5-0.6        8053     4354       3699     54.1%
+  0.6-0.7        8279     5280       2999     63.8%
+  0.7-0.8        9412     6841       2571     72.7%
+  0.8-0.9        9794     8060       1734     82.3%
+  0.9-1.0        11690    10994      696      94.0%
+
+=================================================================
+FEATURE PATTERNS IN ERRORS
+=================================================================
+
+  Error rate by skill_mastery quartile:
+    Q1 (low): 11878 instances, error rate = 29.4%
+    Q2: 11738 instances, error rate = 27.3%
+    Q3: 11817 instances, error rate = 25.5%
+    Q4 (high): 11795 instances, error rate = 16.8%
+
+  Error rate by problem_difficulty:
+    difficulty=0: 3852 instances, error rate = 0.5%
+    difficulty=1: 5331 instances, error rate = 10.5%
+    difficulty=2: 8195 instances, error rate = 19.5%
+    difficulty=3: 7903 instances, error rate = 27.4%
+    difficulty=4: 8373 instances, error rate = 34.0%
+    difficulty=5: 6040 instances, error rate = 36.2%
+    difficulty=6: 3817 instances, error rate = 37.3%
+    difficulty=7: 2008 instances, error rate = 31.3%
+    difficulty=8: 1071 instances, error rate = 19.8%
+    difficulty=9: 432 instances, error rate = 12.0%
+    difficulty=10: 206 instances, error rate = 1.0%
+
+  Error rate by ability_profile (cluster):
+    cluster=0: 9720 instances, error rate = 26.8%
+    cluster=1: 596 instances, error rate = 24.8%
+    cluster=2: 14881 instances, error rate = 27.2%
+    cluster=4: 11253 instances, error rate = 22.9%
+    cluster=5: 2185 instances, error rate = 27.7%
+    cluster=6: 2296 instances, error rate = 29.7%
+    cluster=7: 6297 instances, error rate = 16.4%

@@ -1,0 +1,38 @@
+IKT 5-Fold CV Reproduction Results
+============================================================
+Data source: Authors' preprocessed 5-fold CV splits
+Classifier: WEKA BayesNet with TAN search, Bayes scoring
+
+Dataset       Our AUC     ±Std  Paper AUC     ΔAUC   Our RMSE     ±Std  Paper RMSE    ΔRMSE
+-------------------------------------------------------------------------------------
+ASS09          0.7976   0.0072      0.797  +0.0006     0.4112   0.0031       0.421  -0.0098
+ASS12          0.7676   0.0008      0.767  +0.0006     0.4125   0.0008       0.432  -0.0195
+KDD            0.8466   0.0051      0.851  -0.0044     0.3562   0.0027       0.354  +0.0022
+
+
+Per-Fold Details
+============================================================
+
+ASS09:
+  Fold 1: AUC=0.8110, RMSE=0.4055
+  Fold 2: AUC=0.7910, RMSE=0.4106
+  Fold 3: AUC=0.7980, RMSE=0.4131
+  Fold 4: AUC=0.7960, RMSE=0.4127
+  Fold 5: AUC=0.7920, RMSE=0.4143
+  Mean:   AUC=0.7976±0.0072, RMSE=0.4112±0.0031
+
+ASS12:
+  Fold 1: AUC=0.7670, RMSE=0.4110
+  Fold 2: AUC=0.7680, RMSE=0.4132
+  Fold 3: AUC=0.7670, RMSE=0.4121
+  Fold 4: AUC=0.7690, RMSE=0.4129
+  Fold 5: AUC=0.7670, RMSE=0.4131
+  Mean:   AUC=0.7676±0.0008, RMSE=0.4125±0.0008
+
+KDD:
+  Fold 1: AUC=0.8440, RMSE=0.3578
+  Fold 2: AUC=0.8440, RMSE=0.3586
+  Fold 3: AUC=0.8510, RMSE=0.3563
+  Fold 4: AUC=0.8540, RMSE=0.3510
+  Fold 5: AUC=0.8400, RMSE=0.3572
+  Mean:   AUC=0.8466±0.0051, RMSE=0.3562±0.0027

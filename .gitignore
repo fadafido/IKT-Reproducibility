@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+.venv-win/
+*.egg-info/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Temporary files
+*.tmp
+*.log
+
+# Large intermediate files (regenerated at runtime)
+results/*/train_data_*.csv
+results/*/test_data_*.csv
+results/*/train_data_*.arff
+results/*/test_data_*.arff
+
+# Cleanup artifacts
+CLEANING_SUMMARY.txt
