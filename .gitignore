@@ -18,6 +18,8 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.log
+src/_temp_*.py
+src/_test_*.py
 
 # Large intermediate files (regenerated at runtime)
 results/*/train_data_*.csv

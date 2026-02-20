@@ -282,8 +282,8 @@ def main():
             continue
 
         # Step 2: Run WEKA TAN
-        train_arff = os.path.join(PROJECT_ROOT, "data", "ass09", "train_data.arff")
-        test_arff = os.path.join(PROJECT_ROOT, "data", "ass09", "test_data.arff")
+        train_arff = os.path.join(work_dir, "train_data.arff")
+        test_arff = os.path.join(work_dir, "test_data.arff")
 
         print("  WEKA TAN...")
         weka_output = run_weka_tan_full(train_arff, test_arff, weka_jar, needs_add_opens)
@@ -306,7 +306,7 @@ def main():
             print(f"  FAILED (no AUC)")
 
         # Save per-seed ARFF files
-        data_dir = os.path.join(PROJECT_ROOT, "data", "ass09")
+        data_dir = work_dir
         for fname in ["train_data.arff", "test_data.arff", "train_data_out.csv", "test_data_out.csv"]:
             src = os.path.join(data_dir, fname)
             if os.path.exists(src):

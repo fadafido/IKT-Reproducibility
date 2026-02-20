@@ -167,6 +167,3 @@ class BKT(BaseEstimator):
         return all_all_mastery
     #print (predictions)
 
-if __name__ == "__main__":
-   main()
-

@@ -10,7 +10,6 @@ Default: 5 seeds (42, 123, 456, 789, 1011)
 This produces results for Part A of the assignment.
 """
 
-from random import seed
 import subprocess
 import sys
 import os
